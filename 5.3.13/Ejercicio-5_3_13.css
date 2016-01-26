@@ -19,6 +19,8 @@ body{
 	padding: 20px;
 	z-index: 2;
 	overflow:hidden;
+
+	border-radius: 15px 15px 15px 15px; /*añade bordes redondeados*/
 }
 
 p.cabecera{
@@ -37,5 +39,6 @@ abbr{
 	color: #ff2166;
 	font-size: 130%;
 	border-bottom: thin dashed #888;
+	text-shadow: 0px 0px 1px #333;
 	cursor:help;
 }

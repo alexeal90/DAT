@@ -6,19 +6,25 @@ body{
 	font-family:“goudy-bookletter-1911-1”, “goudy-bookletter-1911-2”, “Baskerville”,
 “Georgia”, serif;
 	font-size:16px;
-	color: black;
+	color: rgba(0, 0, 0, 0.6);
 
 	border-width: 1px; 
-	border-color: #211111;
+	border-color: rgba(21, 11, 11, 0.2);
 	border-style: solid;
 
 	width:440px;
 	height:200px;
 
+	background-color: rgba(180, 180, 144, 0.6); /*cuarto elemento es canal alpha juega con la opacidad, (0 sería transparente)*/
+	background: linear-gradient(to bottom, #444444, #999999); /*añade una degradacion, (esto pisa el color de background-color definido antes)*/
+
 	margin:40px 0px 0px 30px;
 	padding: 20px;
 	z-index: 2;
 	overflow:hidden;
+
+	border-radius: 15px 15px 15px 15px; /*añade bordes redondeados*/
+	box-shadow: 0px 0px 20px #ffffff; /*añade sombra a la caja*/
 }
 
 p.cabecera{
@@ -37,5 +43,6 @@ abbr{
 	color: #ff2166;
 	font-size: 130%;
 	border-bottom: thin dashed #888;
+	text-shadow: 0px 0px 1px #333;
 	cursor:help;
 }
