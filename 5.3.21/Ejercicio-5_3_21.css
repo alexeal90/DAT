@@ -26,17 +26,15 @@ body{
 	border-radius: 15px 15px 15px 15px; /*añade bordes redondeados*/
 	box-shadow: 0px 0px 20px #ffffff; /*añade sombra a la caja*/
 	animation: 5s opa;
+	animation-fill-mode: forwards;
 }
 
 @keyframes opa{
-	33%{
-		color: rgba(180, 180, 144, 0);
-	}
-	66%{
-		color: rgba(180, 180, 144, 0,5);
+	50% {
+		color: rgba(0,0,0,0,5);
 	}
 	100%{
-		color: rgba(180, 180, 144, 1);
+		color: rgba(0,0,0,1);
 	}
 }
 
